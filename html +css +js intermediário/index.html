@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario com js</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <main>
+        <h1 class="paragrafo"><strong>FICOU COM ALGUMA DÚVIDA ? <br> NOS MANDE UMA MENSAGEM!</strong>
+        </h1>
+        <p class="texto">Caso tenha ficado com alguma dúvida, <br> basta nos mandar uma menssagem e <br>entraremos em
+            contato em menos de 24h</p>
+
+        <div class="container">
+            <h2>Preencha seus dados aqui!</h2>
+
+            <form id="myForm">
+                <div class="form-group">
+                    <label for="nome"></label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome">
+                    <p class="error-message" id="nome-error"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                    <p class="error-message" id="email-error"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone"></label>
+                    <input type="text" id="telefone" name="telefone" placeholder="Telefone">
+                    <p class="error-message" id="telefone-error"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem"></label>
+                    <input type="text" id="mensagem" name="mensagem" placeholder="Mensagem">
+                    <p class="error-message" id="mensagem-error"></p>
+                </div>
+                <p class="obrigatorio">campos obrigatórios*</p><br>
+
+                <button class="btn" type="button" onclick="validarForm()">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>
